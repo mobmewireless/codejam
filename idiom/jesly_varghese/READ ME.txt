@@ -1,0 +1,32 @@
+				****************************************************
+						     Vendal
+				****************************************************
+
+					++++++++++++++++++++++++++++++++++++++
+					+Coded by: j3slyVarghese	     +
+					+twitter:j3slyVarghese		     +
+					+facebook:facebook.com/jesly.varghese+
+					++++++++++++++++++++++++++++++++++++++
+
+	
+
+	[DESIGN]
+
+Searches Meriam Webster DIctionary site for query and score each occurence a value 1000
+Searches Reuters and rank each result a value 750
+Searches Wordpress and rank each result -1
+ANd net score is to rank in overall
+data is used to store already done queries for rank
+
+	[DEPENDENCIES]
+
+
+PHP 4 or higher
+
+
+	[USAGE]
+
+
+http://localhost/idiom/index_idiom.html
+or
+http://thecoder.in/jesly/index_idiom.html gives you a live demo

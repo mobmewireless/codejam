@@ -1,0 +1,32 @@
+				****************************************************
+						     Emotion Graph
+				****************************************************
+
+					++++++++++++++++++++++++++++++++++++++
+					+Coded by: j3slyVarghese	     +
+					+twitter:j3slyVarghese		     +
+					+facebook:facebook.com/jesly.varghese+
+					++++++++++++++++++++++++++++++++++++++
+
+	
+
+	[DESIGN]
+
+
+Call the twitter api
+parse the jSON
+get alll the tweets in last 10 seconds
+give it to graph library
+have added report geberation for a day.
+don't know if it will work properly or not.
+
+
+	[DEPENDENCIES]
+
+
+Host it in a server with good bandwidth.
+Else won't work
+
+	[USAGE]
+
+serveraddress/foldername/graph.html

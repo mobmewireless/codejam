@@ -1,0 +1,28 @@
+DESIGN:
+
+The parameters are retrieved from request.GET and set to local variables. The value of user_input is checked.
+If it is blank, the list of countries is retrieved from database and response is sent. If a country exists
+with the given user_input, its capital is retrieved from database and returned. If there is no country with
+corresponding user_input, needed error msg is returned.
+
+
+
+
+DEPENDENCY:
+django-1.3
+
+
+
+USAGE:
+
+Stop apache2 service if it is running 
+$sudo service apache2 stop
+
+$sudo python manage.py runserver 0.0.0.0:80
+to run the development server in localhost
+
+To add more country and capital list, got to http://localhost/admin
+username : codejam
+password : c0d3jam!
+ 
+

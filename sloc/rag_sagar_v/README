@@ -1,0 +1,11 @@
+Design:
+
+Uses github api. api.github.com
+
+
+No Dependency
+
+
+Usage:
+
+python get_sloc.py username repo

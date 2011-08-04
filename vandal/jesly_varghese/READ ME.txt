@@ -1,0 +1,27 @@
+				****************************************************
+						     Vendal
+				****************************************************
+
+					++++++++++++++++++++++++++++++++++++++
+					+Coded by: j3slyVarghese	     +
+					+twitter:j3slyVarghese		     +
+					+facebook:facebook.com/jesly.varghese+
+					++++++++++++++++++++++++++++++++++++++
+
+	
+
+	[DESIGN]
+
+ODTFile are Zip Archive
+Modify 'content.xml' to bring about changes in the file
+
+
+	[DEPENDENCIES]
+
+
+Python 2.5 or higher
+
+
+	[USAGE]
+
+python vendal.py zipfilename

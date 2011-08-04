@@ -1,0 +1,24 @@
+# Design #
+
+Contains 1 files.
+* kaprekar.py:
+    Generates all numbers from 1000 to 9998 such that is contains atleast 2 distinct digits. Finds the number of iterations it takes to reach the kaprekar number 6174. Generates a file report.html which lists the numbers along with the number of iterations it takes to reach kaprekar number from that number. It also prints a simple histogram table.
+
+# Dependencies #
+
+* Linux machine.
+* Python 2.7
+
+# Usage #
+$python kaprekar.py
+$google-chrome report.html
+
+Run the python script and then open the file report.html in a browser.
+
+Note: * The README is in Markdown format so it can be converted to any format for readability.
+
+# Author #
+Ruturaj M. Dhekane
+Trivandrum, Kerala.
+ruturajmd@gmail.com
+IIT Kanpur

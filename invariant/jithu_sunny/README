@@ -1,0 +1,14 @@
+Design
+------
+1) List of required numbers is made first(instead of looping from 1000 to 9999 & comparing each number) for efficiency.
+2) Iteration_counter function is used to find out number of iterations for each number.
+3) Then according to number of iterations the count is entered into the iteration_dictionary.
+
+Dependencies
+------------
+Python 2.x
+
+
+Usage
+-----
+$ python invariant.py

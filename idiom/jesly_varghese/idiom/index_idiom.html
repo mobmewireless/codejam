@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+.diva
+{
+	height:100px;
+	width:100px;
+}
+</style>
+<title>IDIOM SEARCH :: How people use words for real</title>
+<script type='text/javascript'>
+try {
+http_ranklist = new ActiveXObject("Microsoft.XMLHTTP"); // Trying Internet Explorer
+http_rank = new ActiveXObject("Microsoft.XMLHTTP"); // Trying Internet Explorer
+}
+catch(e) // Failed
+{
+http_ranklist = new XMLHttpRequest(); // Other browsers.
+http_rank = new XMLHttpRequest(); // Other browsers.
+}
+
+http_ranklist.onreadystatechange = function() {//Call a function when the state changes.
+	if(http_ranklist.readyState == 4) {
+		if(http_ranklist.status == 200)
+			{
+				document.getElementById("ranklist").innerHTML = http_ranklist.responseText;
+				
+			}
+	}	
+	else
+	{
+	document.getElementById("ranklist").innerHTML = "Working...";
+	//Have the anime going on here...
+	}
+}
+
+http_rank.onreadystatechange = function() {//Call a function when the state changes.
+	if(http_rank.readyState == 4) {
+		if(http_rank.status == 200)
+			{
+				document.getElementById("rank").innerHTML= 'RANK:'+http_rank.responseText;
+				genranklist();
+			}
+	}	
+	else
+	{
+	document.getElementById("rank").innerHTML = "Working...";
+	//Have the anime going on here...
+	}
+}
+
+</script>
+<script type='text/javascript'>
+function genranklist()
+{
+	url = 'rank_gen.php'
+	http_ranklist.open('GET',url,true);
+	http_ranklist.send(null);
+}
+function genrank()
+{
+	query = document.getElementById("query").value;
+	url = 'search.php?query='+query;
+	http_rank.open('GET',url,true);
+	http_rank.send(null);
+}
+</script>
+<center>
+</head>
+<body onLoad='genranklist()'>
+<center><h1>IDIOM Ranker</h1></center>
+<br/>
+<table>
+<tr>
+<form name = "search" >
+<input type="text" name="query" value = 'query' id="query"/>
+<input type="button" value="Rank!" onClick='genrank()'/>
+</form>
+</tr>
+<tr>
+<td>
+<div id='ranklist' class='diva'>
+</div>
+</td>
+<td><h3>
+<div id='rank' class = 'diva'>
+</div>
+</h3>
+</td>
+</tr>
+</table>
+</center>
+<center>
+<br/>
+<br/>
+<div id='help'>
+<tt>Type your query and click 'Rank!'. Wink! And results and rank is there..</tt>
+</div>
+</center>
+</body>
+</html>

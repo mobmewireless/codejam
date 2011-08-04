@@ -1,0 +1,74 @@
+				****************************************************
+						      Sandbox
+				****************************************************
+
+					++++++++++++++++++++++++++++++++++++++
+					+Coded by: j3slyVarghese	     +
+					+twitter:j3slyVarghese		     +
+					+facebook:facebook.com/jesly.varghese+
+					++++++++++++++++++++++++++++++++++++++
+
+	
+
+	[DESIGN]
+
+
+The program consist of a 
+TCP Server [tcp_serv_mobme.py] -> it implements list, pwd, touch, rm, cat time
+TCP Client [tcp_cli_mobme.py]  -> you can communicatwe with server and get the output on your terminal. Welcome to Codejam cmd :)
+TCP Client Bot [tcp_bot_mobme.py] -> the client bot that automatically creates a file with random filename and content server time
+
+Simple TCP Server and two clients. No specific design complications
+
+
+	[DEPENDENCIES]
+
+
+Python 2.5 and higher
+
+	[USAGE]
+
+
+[1]. First initialize the server.
+	
+	Type python tcp_serv_mobme.py <port_number> port_number should be greater than 1023 reserved ports. And should be 	less than 65532
+
+	eg: python tcp_serv_mobme.py 6060
+
+[2]. Second start any of the clients 
+	
+	a. Normal Client. Normal manual interaction with server
+		python tcp_cli_mobme.py <server_ipv4_address> <port_number> portnumber should be same as server port number
+		Type help for command syntaxs
+
+		eg: python tcp_cli_mobme.py 127.0.0.1 6060
+		
+	Commands and usages
+		
+		touch <filename> <content>
+		Usage create file with filename: filename and content: content
+		eg: touch hello.txt hikoooo!
+
+		cat <filename>
+		Usage: opens the file of specified filename and displays its content
+		eg: cat hello.txt
+
+		rm <filename>
+		Usage: Deletes specified file
+		eg: rm hello.txt
+
+		list
+		Usage: list current directory contents
+
+		pwd
+		Usage: returns current directory path
+
+		time
+		Usage: Returns server time
+ 
+	b. Bot Client. The client which creates file with filename a random and content server time
+		python tcp_bot_mobme.py <server_ipv4_address> <port_number> portnumber should be same as server port number
+		
+		To exit press Ctr+C <Python keyboard interrupt>
+
+		eg: python tcp_bot_mobme.py 127.0.0.1 6060

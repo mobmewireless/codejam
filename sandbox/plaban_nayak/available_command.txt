@@ -1,0 +1,16 @@
+list: Lists the files and directories in the present working directory
+
+pwd: Displays present working directory
+
+rm <filename>: Takes a filename as argument and removes it 
+
+touch<filename><contents>: Takes file name and contents as arguments and creates the file
+
+cat <filename>: Displays the contents of file
+
+time: Displays current server time
+
+help: Displays  the list of command
+
+
+

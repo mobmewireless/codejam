@@ -1,0 +1,109 @@
+<html>
+<head>
+    <script src="RGraph.common.core.js" ></script> 
+    <script src="RGraph.common.context.js" ></script> 
+    <script src="RGraph.line.js" ></script> 
+  <script> 
+        window.onload = function (e)
+        {
+            d1 = [];
+            
+        
+            // Pre-pad the arrays with 100 null values
+            for (var i=0; i<100; ++i) {
+                d1.push(null);
+                    }
+ 
+            function getGraph(id, d1)
+            {
+                var graph = new RGraph.Line(id, d1);
+                graph.Set('chart.xticks', 100);
+                graph.Set('chart.background.barcolor1', 'white');
+                graph.Set('chart.title.xaxis', 'Time >>>');
+                graph.Set('chart.title.yaxis', 'People');
+                graph.Set('chart.title.vpos', 0.5);
+                graph.Set('chart.title', 'Number of people saying "I Love You!" in twitter every 10 seconds');
+                graph.Set('chart.filled', false);
+                graph.Set('chart.colors', ['rgb(255, 000, 000)', 'red']);
+                graph.Set('chart.linewidth', 1);
+                //graph.Set('chart.ylabels.inside', true);
+                graph.Set('chart.yaxispos', 'left');
+                graph.Set('chart.ymax', 100);
+                return graph;
+            }
+        
+            function drawGraph ()
+            {
+                RGraph.Clear(document.getElementById("cvs"));
+                
+                var graph = getGraph('cvs', d1);
+                graph.Draw();
+                
+               
+ 
+                d1.push(gvalue);
+                
+                
+                if (d1.length > 100) {
+                    d1 = RGraph.array_shift(d1);
+                    
+                }
+    
+                if (document.all && RGraph.isIE8()) {
+                    alert('[MSIE] Sorry, Internet Explorer 8 is not fast enough to support animated charts');
+                } else {
+                    setTimeout(drawGraph,10000);
+                }
+            }
+        
+            drawGraph();
+        }
+    </script> 
+<script>
+    /**
+    * Makes an AJAX call. It calls the given callback (a function) when ready
+    * 
+    * @param string   url      The URL to retrieve
+    * @param function callback A function object that is called when the response is ready, there's an example below
+    *                          called "myCallback".
+    */
+    var gvalue=0;
+    
+        // Mozilla, Safari, ...
+        if (window.XMLHttpRequest) {
+            var httpRequest = new XMLHttpRequest();
+        
+        // MSIE
+        } else if (window.ActiveXObject) {
+            var httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+         
+        function reKindle(){
+               
+        httpRequest.open('POST',"twitter.php", true);
+        httpRequest.send(null);
+      }
+    
+
+
+    /**
+    * This sample callback function is called when the data is ready (readyState=4)
+    */
+    httpRequest.onreadystatechange = function()
+    {
+        if (this.readyState == 4 && this.status == 200) {
+            // Everything is good, the response is received
+            {
+	            gvalue = parseInt(this.responseText);
+	               
+	        }
+        }
+    }
+    setInterval("reKindle()",10000);
+</script>
+</head>
+<body>
+<a href="my_mood.php" target="_blank">Report for the day</a>
+<canvas id="cvs" width="1200" height="600" style="float: left">[No canvas support]</canvas> 
+  
+</body>

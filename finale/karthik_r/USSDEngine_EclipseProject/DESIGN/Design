@@ -1,0 +1,69 @@
+1. Dynamic Nature
+
+Task : The menu shown might be different on each day. So we should be able to add new FSMs easily. 
+
+Solution : In the directory 'config', a settings file is kept. 
+It has a key-value pair that saves the name of the current service available via USSD.
+
+Eg. 
+
+		Open config>settings
+
+		module=CapitalQuiz
+
+This means that currently the service being offered is 'CapitalQuiz'.
+
+2. Representing a Service
+
+Say our USSD service for today is a quiz, say Capital Quiz.
+The entire FSM for the quiz can be represented in a text file. It should be saved in the directory   'USSDEngine'
+
+(Open USSDEngine to find a few sample Services)
+
+Eg.  Currently our 'module' is set to 'CapitalQuiz'. Hence in the directory 'USSDModules', a file with the FSM should be present with the same name 'CapitalQuiz'
+
+
+3. Representing an FSM in a text file
+
+Say our menu is like this :
+
+Language?
+ 	1. English
+		1. Movies
+			-Subscribed to Movies
+		2. Music
+			-Subscribed to Music
+	2. Malayalam
+		1. Cinema
+			-Subscribed to Cinema
+		2. Audio
+			-Subscribed to Audio
+
+Then the text file for FSM will be as follows :
+
+level0=Language?\n 1. English\n 2. Malayalam\n
+error=invalid
+level0_1=1. Movies\n2. Music
+level0_2=1. Cinema\n2. Audio
+level01_1=Subscribed to Movies!
+level01_2=Subscribed to Actors!
+level02_1=Subscribed to Cinema!
+level02_2=Subscribed to Nadanmar!
+
+
+
+level0 = MAIN MENU
+
+level0_x = Text to be showed when User presses x from level0
+level0x_y = User pressed x from main menu to reach next state (level0x). Text to be shown if he pressed y after that.
+
+
+The field 'error' is the error message to be shown if any incorrect state is reached!
+
+
+Hence, with the above representation, any problem can be mapped as a FSM.
+
+
+
+
+

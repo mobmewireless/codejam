@@ -1,0 +1,18 @@
+Design
+
+The code is written in PHP.
+There are 3 files :index.php,filter.php and count.php
+The index.php generates random 10 digit numbers line by line.
+The filter.php classifies each of these numbers into the respective text file.
+The count.php file shows the number of numbers in each text file every second.
+
+
+Dependancy:
+A server which runs php
+or xampp in a local home computer.
+
+
+Usage:
+upload the files into a server which runs php
+run the index.php file to generate the 10 digit numbers.
+run the count.php file to show the number of results in every text file.

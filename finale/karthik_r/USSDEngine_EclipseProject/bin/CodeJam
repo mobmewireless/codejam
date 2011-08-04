@@ -1,0 +1,6 @@
+level0=What is your feedback about CodeJam?\n 1. Bad\n 2. Average\n 3. Good\n 4. Awesome\n
+level0_1=Bad
+level0_2=Average
+level0_3=Good
+level0_4=Awesome
+error=Invalid input

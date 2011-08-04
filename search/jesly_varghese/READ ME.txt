@@ -1,0 +1,15 @@
+	[DESIGN]
+Uses Python libraries to crawl into website
+Search the contents after removing tags from files
+And if matches found return the links
+
+	[DEPENDENCIES]
+
+
+Python
+
+
+	[USAGE]
+
+max@max-VirtualBox:~$ python searchmobme.py
+

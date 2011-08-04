@@ -1,0 +1,19 @@
+id:ngram
+
+Question:
+	Write a program which first collects all word-level trigrams in a novel-length story. Then, choosing any arbitrary trigram as the starting point, generate a short story which is between 200 to 300 words. The next trigram in the chain must always have the first two words same as that of the previous trigram's last two words.
+What is a trigram you ask? The sentence "The quick red fox jumps over the lazy brown dog" has the following trigrams - "The quick red", "quick red fox", "red fox jumps", "fox jumps over", "jumps over the", "over the lazy", "the lazy brown", "lazy brown dog".
+
+Description:
+	After reading a story from the text file it splits into words. Next it group teh words as per trigram and this trigram will be stored as a list. Next the first trigram is selected upon a random selection. Next trigram is selected by adding a number. This number is selected from the below rule
+	No of words in the story/86. 86 is selected as the short version should contain 250-300 words only.
+The number gets added to the previous selected anagram and it goes on or traverse the file til end making a short version of the novel/story
+
+Dependences:
+	python 2.7
+
+Usage:
+In linux:
+	$python ngram.py
+In windows:
+	C:/>python ngram.py

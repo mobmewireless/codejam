@@ -1,0 +1,12 @@
+Design:
+		A php script demonstrating fuzzyness clock.
+		
+		It convert time into words and updates with help of a prototype function Ajax.PeriodicalUpdater() every 30 seconds
+		
+		
+		
+Dependencies:
+			This php can be run on any localsever with php>4.0.
+			
+Usage:
+		To see the ouput just run clock.php script.

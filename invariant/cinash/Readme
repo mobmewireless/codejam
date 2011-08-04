@@ -1,0 +1,17 @@
+Design
+-------
+Numbers from 1000 to 9998 is converted to array and sorted.
+The difference is found out.
+If the difference is not 6174 the function is called again.
+The global variable count is incremented to keep the count
+
+
+Dependencies
+-------------
+g++
+
+
+Usage
+-----
+Open terminal and compile using "g++ invariant.cpp"
+run using "./a.out"

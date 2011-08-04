@@ -1,0 +1,8 @@
+level0=Language?\n 1. English\n 2. Malayalam\n
+error=invalid
+level0_1=1. Movies\n2. Actors
+level0_2=1. Cinema\n2. Nadan
+level01_1=Movies!
+level01_2=Actors!
+level02_1=Cinema!
+level02_2=Nadanmar!

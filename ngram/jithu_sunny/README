@@ -1,0 +1,21 @@
+						Code Jam
+
+email id : <jithusunnyk.gmail.com>
+
+Design:
+
+	step 1: Collect all the trigrams from the story and save it in a list(trigram_list)
+	step 2: Using a function Trigram_Match() find the matching trigrams and form the story with number of words not greater than 300
+	step 3: Select any random trigram as the title of the story and print it
+	
+	
+Dependencies :
+
+		Use standard python library's.(python2.6)
+		Platform : Ubuntu Linux
+
+Usage :
+	
+	python 	ngram.py
+	
+	The story used for generating the story should be stored on the same directory.

@@ -1,0 +1,11 @@
+A.Design:
+We take in the entire book or article as a single string. Then we initialise a two-dimensional string to store each and every trigram in the text. Then we pick a random index to traverse till the end in the 2-D array of trigrams in order to get the desired output.
+
+B.Dependencies:
+Only a gcc 4.3.2 compiler is required. It is to note that this program has been done on a LINUX environment.
+
+C.Usage:
+This contains a single source file and should be run using the command:gcc -Wall ngram.c
+The executable command is: 
+./a.out<sample.txt>smaple2.txt
+It reads from sample.txt,a portion of a wikipedia article on factorials and then writes into smaple2.txt. 

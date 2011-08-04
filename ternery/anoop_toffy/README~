@@ -1,0 +1,62 @@
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%    Copyright (C) 2011         CODEJAM					   %	
+		%									   %
+		%	Author : Anoop Toffy <anoop.toffy90@gmail.com>			   %
+		%									   %
+		%    This program is free software: you can redistribute it and/or modify  %
+		%    it under the terms of the GNU General Public License as published by  %
+		%    the Free Software Foundation, either version 3 of the License, or     %
+		%    (at your option) any later version.				   %
+		%									   %
+		%    This program is distributed in the hope that it will be useful,       %
+		%    but WITHOUT ANY WARRANTY; without even the implied warranty of        %
+		%    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         %
+		%    GNU General Public License for more details.              		   %
+		%									   %
+		%    You should have received a copy of the GNU General Public License     %
+		%    along with this program.  If not, see <http://www.gnu.org/licenses/>. %
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	Name :Anoop Toffy
+	College: Govt. Engineering College, Thrissur
+	email id :anoop.toffy90@gmail.com
+	
+	
+				*******************************
+Design :
+		ternary.c
+			It is where execution starts. 
+			The code takes a long int number n and outputs it into a file
+			The two pipes are used, which reades the output from main and implements the objective
+			(One pipe is ment for only reading and exe code(filter.c),While other exexcutes and prints output from code 
+			(count.c))
+			The count is the incremented to the required limit(9999999999)
+			suitable delay of 1sec is also given
+		filter.c
+			This program filter the main program output and stores the numbers in seperate files.
+		count.c
+			Thic program counts the numbers in each file seperatly and outputs the result.
+
+		/* More Detailed explation are give as comments in between the code */
+
+				**********************************
+				
+Dependencies:
+				GCC(GNU Compiler Collection)	
+
+
+				*********************************
+Usage :
+				
+				(Use minimized window. It will look better)
+				(Eitor used - gedit)
+				
+				cc filter.c -o filter.exe
+				cc count.c -o count.exe
+				cc ternay.c -o ternary
+				./ternary
+				
+				*********************************
+				
+				
+				----------------------------HAPPY HACKING ----------------------------

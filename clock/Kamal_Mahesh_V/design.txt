@@ -1,0 +1,8 @@
+
+The clock that shows the current time in words is programmed only using php.
+
+The hour and minute current time is obtained using php functions.
+
+The data the thus obtained is skillfully programmed to print the date in words.
+
+The 'clock.php' file includes the full source code, and no other file or language is used for the program.

@@ -1,0 +1,38 @@
+Design:
+
+Consist of three modules.
+search.py : This is the main file.The populate_index() function using the urllib2 module
+			web pages in mobme.in is read, converted to text using html2text function from
+			data_extractor.py and then search index is populated using the generate_index()
+			method of database.CreateDb.The search_word() function in this modules uses the
+			search() of database.CreateDb class and prints the result in order of occurence.
+			class. 
+database.py : This module consists of the 'CreateDb' class. This class provides 
+			  method for updating, searching and checking existence of the database file.
+data_extractor.py : This module consists the html2text function which helps to extract
+					text from raw html.
+					
+Uses sqlite3 as database.First all the web page data are fetched from mobme.in and index is 
+created.Then the database is queried for the search keyword and results are printed in order
+of occurrence.
+
+Dependencies:
+
+No specific dependencies.
+
+
+Usage:
+
+First run 
+$ python search.py -u
+or 
+$ python search.py --update
+to index the pages and update the database
+
+To search for keyword
+$ python search.py -s <keyword>
+
+For multiple word keywords use double quotes
+
+To display help
+$ python --help

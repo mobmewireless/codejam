@@ -1,0 +1,45 @@
+# Design #
+
+Note runs only on linux machine.
+
+Contains 3 files.
+* gen.py:
+    Generates random numbers using the random function. Multiplies each number by 10^10. Prints each such number on the STDOUT. It continues till we give a key board interrupt after which it terminates.
+
+* read.cpp:
+    Opens a file for each bin. Reads from STDIN a string which should be a number. Writes to that file according to the starting digit.
+
+* pcount.py:
+    Uses the system call to count lines in the file. Sleeps for 10 secs and after that counts the lines in the files.
+
+# Dependencies #
+
+* Linux machine.
+* G++ version 4.5.1
+* Python 2.7 -> Modules used 
+                * command
+                * time
+                * random
+                They are mostly inbuilt.
+
+# Usage #
+* gen.py can run independently and print the 10 digit numbers.
+* pcount.py can run independently and counts the lines in required files.
+* read.cpp when compiled runs independently to accept numbers and write to a file.
+
+## Commands ##
+1. $g++ -o filter read.py
+2. $chmod a+x gen.py
+3. $chmod a+x pcount.py
+4. $chmod a+x filter
+5. $./gen.py | ./filter
+6. $./pcount
+
+Note: * Put command 5 in background. You can always open a new shell to run command 6.
+
+
+# Author #
+Ruturaj M. Dhekane
+Trivandrum, Kerala.
+ruturajmd@gmail.com
+IIT Kanpur

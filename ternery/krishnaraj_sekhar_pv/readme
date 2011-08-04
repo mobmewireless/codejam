@@ -1,0 +1,13 @@
+Design
+	Folder consist of 3 files. 
+	generate.py : Uses random module to generate random number in range.
+	create_file.py : Uses generate.py and runs it as a subprocess and polls the output 1 characted at a time and combine it to form the 10 digit number.
+	count.py : Output the number of lines in each file
+
+Dependencies
+	Basic python installation
+
+Usage
+	python create_file.py	
+	python count.py
+

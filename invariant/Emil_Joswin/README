@@ -1,0 +1,18 @@
+invariant
+`````````
+a) 1.The program first checks if the number atleat has two distinct digits. If not the number need not be processed.
+   2.Find the smallest and larges numbers possible with the digits of the numbers.
+   3.Find the difference between the smallest and largest number.
+   4.Goto 2 if the difference is not 6174.
+   5.Find the count of the number of iterations required for each number to reach step5.
+   6.Plot a frequency distribution relating the number of iterations and the no of original numbers that has the particular iteration.
+   7.Exit.
+
+b) Nothing.
+
+
+c) Compile and run the program as usual.
+
+
+
+

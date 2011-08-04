@@ -1,0 +1,4 @@
+
+To run clock.php file apache and php servers are required.
+
+Also, all in one packages like XAMPP,Wampserver etc are available that can run php files in any platfom, i.e; windows, linux and mac.

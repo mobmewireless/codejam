@@ -1,0 +1,16 @@
+.imagename{
+    width: 350px;
+}
+.preview{
+    max-width: 300px;
+}
+.ui-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.1em;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+}

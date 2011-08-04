@@ -1,0 +1,8 @@
+The idea is to divide the story into list(lists). With this approach it is easier to solve.
+Individual words are collected first. Then they are grouped in order of 3 to form triagrams.
+
+Triagram formed is a list of 3 individual words in order. The checking criteria is done by comparing induividual elements.
+Random number generatied with the help of Random module..
+
+Program is'nt completed (debugging)
+

@@ -1,0 +1,14 @@
+a)The links for two images are asked and both of them are then loaded into a buffer.
+
+The images are 1st checked for resolution. If they dont have similar resolution their similarity = 0 and program exits.
+
+Each image's imageband is compared separately.Accordingly a similarity scale is produced.
+
+b)nothing
+
+c)javac programname.java
+java program
+
+// the usual format of running java.
+
+

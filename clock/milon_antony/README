@@ -1,0 +1,11 @@
+Design:
+Question:-
+Implement a clock that spells out time with fuzziness. For example, 2:43 would show as It is almost fifteen to three.
+
+This program does almost exactly what the hint website:helvetictoc.com does.
+Fuzziness is impemented by the program.
+
+Dependencies: GNU C compiler
+
+Usage: Run the program. The program keeps on running infinitely, takes the system time and displays it using the fuzzy logic.
+

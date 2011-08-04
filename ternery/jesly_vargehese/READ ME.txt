@@ -1,0 +1,32 @@
+				****************************************************
+						     Ternary
+				****************************************************
+
+					++++++++++++++++++++++++++++++++++++++
+					+Coded by: j3slyVarghese	     +
+					+twitter:j3slyVarghese		     +
+					+facebook:facebook.com/jesly.varghese+
+					++++++++++++++++++++++++++++++++++++++
+
+	
+
+	[DESIGN]
+
+number_generator.py generates 10 digit numbers randomly
+filter.py reads the output of number_generator.py and creates filtered files
+watch.py counts the number of numbers in each of these files
+
+
+	[DEPENDENCIES]
+
+
+Python 2.5 or higher
+
+
+	[USAGE]
+
+python number_generator.py
+python number_generator.py | python filter.py
+python watch.py
+
+To exit: Ctrl+C -> Python Keyboard interrupt 

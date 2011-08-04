@@ -1,0 +1,50 @@
+"""
+    Algorithm: The process of finding  the  number  of iterations
+               for a particular number   is  recursive in nature.
+               But when this  process   is  done for numbers from
+               1000 to 9998, it  is   observed that the recursion
+               tree for many numbers  has  common  branches  ,as
+               when sorted by digit many numbers give same result
+               So, we can use dynamic programming here.A dictionary
+               lookup_sorted in used which stores no of iterations
+               for previously computed sorted values.
+
+"""
+               
+               
+
+import unittest
+
+
+
+# dictionary to hold no of iterations  for already computes sorted values
+lookup_sorted = {}
+
+def dynamic_prog(number):
+    """Returns the no of iterations for a number to reach 6174"""
+    
+    string_num = str(number)
+    string_num = string_num.rjust(4,"0")  #zero padding the number 
+    asc_num = ''.join(sorted(string_num)) #ascending string
+    
+    if asc_num in lookup_sorted:
+        # if computed earlier
+        return lookup_sorted[asc_num]
+    else:
+        
+        desc_num = asc_num[::-1] # descending string
+        diff = int(desc_num) - int (asc_num)
+        
+        if diff == 6174:
+            lookup_sorted[asc_num] = 1
+        else:
+            # again the process is repeated with a new argument,diff
+            itr = dynamic_prog(diff)
+            lookup_sorted[asc_num] = itr + 1
+            
+        # the no of iterations for sorted value asc_num is returned    
+        return lookup_sorted[asc_num]
+    
+
+
+        

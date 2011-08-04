@@ -1,0 +1,8 @@
+Design
+	Uses Dictionaries and Lists for storing various words needed. Special cases are there for noon and midnight. 
+
+Dependencies 
+	Basic Python installation
+
+Usage
+	python clock.py

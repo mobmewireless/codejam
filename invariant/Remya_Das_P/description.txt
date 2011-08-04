@@ -1,0 +1,10 @@
+Description:
+1. iteration is done from 1000 to 9998.
+2. each digit of that particular 4 digit number is taken and put into an array.
+3. array is sorted in ascending order using bubble sort.
+4. a variable is assigned to identify the number of iterations performed.
+5. two variables are initialized to assign the values in ascending and descending orders respectively.
+6. the number in ascending order is subtracted from the number in descending order, the result is now compared with 6174.
+7. if there is an eqality then the loop is exited and the count value is displayed.
+8. else the loop is executed again with the result obtained from step 6.
+

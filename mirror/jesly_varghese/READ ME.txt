@@ -1,0 +1,36 @@
+				****************************************************
+						      Mirror
+				****************************************************
+
+					++++++++++++++++++++++++++++++++++++++
+					+Coded by: j3slyVarghese	     +
+					+twitter:j3slyVarghese		     +
+					+facebook:facebook.com/jesly.varghese+
+					++++++++++++++++++++++++++++++++++++++
+
+	
+
+	[DESIGN]
+
+
+The program consist of a 
+TCP Server [tcp_serv_mobme.py] -> it implements list, pwd, touch, rm, cat time
+TCP Client [tcp_cli_mobme.py]  -> you can communicatwe with server and get the output on your terminal. Welcome to Codejam cmd :)
+TCP Client Bot [tcp_bot_mobme.py] -> the client bot that automatically creates a file with random filename and content server time
+
+Simple TCP Server and two clients. No specific design complications
+
+
+	[DEPENDENCIES]
+
+
+Python 2.6
+Scipy for Python 2.6 http://www.scipy.org/Download
+Numpy for Python 2.6 http://www.scipy.org/Download
+PIL   for Python 2.6 http://www.pythonware.com/products/pil/
+
+	[USAGE]
+
+python image.py img_url1 img_url2
+
+Can compare only jpg images

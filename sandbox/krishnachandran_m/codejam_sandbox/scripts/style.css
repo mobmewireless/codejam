@@ -1,0 +1,22 @@
+.cmdbox{
+    width: 100%;
+    height: 80px;
+    overflow: auto;
+}
+.outbox{
+    width: 100%;
+    overflow: auto;
+    color: white;
+    background-color: #444;
+    height: 350px;
+}
+.ui-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.1em;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+}

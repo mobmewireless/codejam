@@ -1,0 +1,61 @@
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%    Copyright (C) 2011         CODEJAM					   %	
+		%									   %
+		%	Author : Anoop Toffy <anoop.toffy90@gmail.com>			   %
+		%									   %
+		%    This program is free software: you can redistribute it and/or modify  %
+		%    it under the terms of the GNU General Public License as published by  %
+		%    the Free Software Foundation, either version 3 of the License, or     %
+		%    (at your option) any later version.				   %
+		%									   %
+		%    This program is distributed in the hope that it will be useful,       %
+		%    but WITHOUT ANY WARRANTY; without even the implied warranty of        %
+		%    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         %
+		%    GNU General Public License for more details.              		   %
+		%									   %
+		%    You should have received a copy of the GNU General Public License     %
+		%    along with this program.  If not, see <http://www.gnu.org/licenses/>. %
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	Name :Anoop Toffy
+	College: Govt. Engineering College, Thrissur
+	Branch : CS S7
+	Email Id :anoop.toffy90@gmail.com
+	
+	
+				*******************************
+Design	:	The program is witten in python
+
+			 Data sturcture mainly used "list"
+
+			 STARTS
+			 
+		step 1 : Find the numbers that follows the following condintions as mentioned in question and store the output 
+			 to a list.
+		step 2 : Sort the numbers and store it in different varuable as mentioned in question 
+			 find the iterations taken by each number to yeild sum = 6174 as mentioned in question
+			 store those count to a freq[] list
+		step 3 : find the count of freqencies from list using built in list function eg : freq.count(0) 
+			 and store it in another list. Output frequency distribution table. 
+		step 4 : get the data for chart from the freq[] list and sort[] list
+		step 5 : output chart to the file graph.png
+			 
+			 ENDS
+
+				*******************************
+Dependencies :
+				platform : UBUUNTU LINUX
+				use python 2.x and pychart packages
+				use Synaptic to install pychart (search : pychart)
+		
+
+				*******************************
+Usage :
+				(run as)
+				$python invariant.py
+	
+				*******************************
+				
+				
+				<<<<<<<<<<<<<HAPPY HACKING>>>>>>>>>>>>>
+				

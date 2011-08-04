@@ -1,0 +1,27 @@
+a)Design
+--------
+    The script makes use of php GD library. It outputs the image to current 
+    output stream or save to a file. 
+    
+    If php GD library have anti aliasing support then we can enable that for much
+    better render.Currently anti aliasing is not enabled in the script.
+
+    The output is in JPEG format but it can be changed to other format if necessary
+    with a few modification in the script.
+    
+b)Dependencies
+--------------
+    PHP needs GD Library support. Most of the php distribution compiled with it.
+
+c)Usage
+-------
+    
+    php flag.php filename
+    
+    Filename argument is optional. If not present the script will output to the 
+    current output stream
+
+   for example: 
+        php flag.php | display       
+        will open the image in ImageMagick picture viewer
+   

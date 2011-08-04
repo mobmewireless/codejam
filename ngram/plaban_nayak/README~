@@ -1,0 +1,26 @@
+DESIGN
+Programming language :Python
+Classes:  novel , dissociation_press
+Methods:  main_method, generate_novel_object
+
+Procedure:
+
+1 In the generate_novel_object function,  a class novel oject is created to contain trigram list of novel ,words and wordsize 	of the novel
+	
+2 Then the novel object is passed to the dissociation press object which runs dissociation press algorithm on it
+  to generate the short story
+
+
+
+
+
+DEPENDENCIES
+
+The text file of "Christmas Carol" is attached with code
+Standard libraries used 
+
+Usage
+place the novel file and the python code in the same directory and run the code
+
+
+

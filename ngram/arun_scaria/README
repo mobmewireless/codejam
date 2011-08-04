@@ -1,0 +1,30 @@
+README - ngram
+
+
+Design :
+
+This code retrieves the url http://www.gutenberg.org/cache/epub/16855/pg16855.txt and reads the resulted text file into a string. This string is sanitized using by ripping off the white spaces and special characters(newline, tab, carriage return). This string is break down and saved as a list. Using mathematic random function we select a starting point and starts printing from that point. At each leven the trigram condition is maitained using the shifting of values to previous variable.
+
+like:   second --> first
+	third --> seconds
+	generate third as second+1
+	print them
+	loop to :like: untill 250 times or end of list
+
+
+	Just for the sake of readability I've splitted the short story as paragraphs. and The end messah\ge is printed at the end.
+
+****NOTE : if you want unique list to print data add ht=list(set(ht)) after line number 14.****
+
+Dependancies:
+No dependencies as only standard modules are used. (modules re,urllib2 and random are used)
+
+
+usage: 
+./ngram.py [url-to-override]
+
+if url is not given default is chosen.
+
+
+
+

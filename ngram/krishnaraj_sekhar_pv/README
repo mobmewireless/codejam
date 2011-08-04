@@ -1,0 +1,9 @@
+Design
+	The program reads a file which is given as the command line argument and write the trigrams into an temporary file named "trigans.txt". From there the program reads a trigrams and join them to form the short story.
+
+
+Dependencies
+	Basic python installation.  I have included a file which i used for testing named pg345.txt
+
+Usage
+	python ngram.py <file name of the novel>

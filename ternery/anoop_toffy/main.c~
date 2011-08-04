@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+static char *command1 = "./filter.exe";
+static char *command2 = "./count.exe";
+void waitFor (unsigned int secs) {
+	int retTime;
+	retTime = time(0) + secs;     // Get finishing time.
+	while (time(0) < retTime);    // Loop until it arrives.
+}
+main()
+{
+	long int n;
+	n = 1000000000;
+	system("rm *.txt");
+	FILE *fp,*fp1,*fp2;
+	remove("output");
+	for(;n<=9999999999;n++)
+	{
+		waitFor(1);
+		fp = fopen("output","w");
+		putw(n,fp);
+		fclose(fp);		
+		printf("%ld\n",n);
+		fp1 = popen(command1,"r");
+		pclose(fp1);
+		fp2 = popen(command2,"w");
+		pclose(fp2);
+	}
+	printf("\n");
+	return 0;
+}

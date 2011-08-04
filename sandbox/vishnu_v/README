@@ -1,0 +1,17 @@
+constructing two file components Server(sandbox.py) and Client(client.py)
+1. Server
+	accept request from client
+	process the request
+	send response to client
+2. Client
+	Request process to server
+
+Dependencies (to be installed)
+python 2.7
+
+Usage
+Runnong server
+python sandbox.py
+Running client
+python client.py
+

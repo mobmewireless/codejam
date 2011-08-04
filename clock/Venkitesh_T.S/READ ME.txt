@@ -1,0 +1,4 @@
+The Programming Language used is PHP.Date function is used to return the GMT Time .It is added with +5.30 to attain the IST time.$min stores the minute of current time and $hr stores the hour of current time.An Array 'ho' Stores Text One,Two..Twelve.
+Using the date function the current minute and hour is retrieved.A switch case is used.$Z is used as an index for the array 'ho' to denote the hour.$y is mainly used to represent the next hour.$a,$b and $c stores the random words "NOW","PRECISELY","EXACTLY" and "ABOUT","AROUND","AFTER" and "NEARLY","ALMOST" respectively.Rand() function is used to generate the random number which is then given to $i,$j and $k which are used as indexing array $a,$b and $c so that the strings in those arrays will be chosen randomly.
+Then a series of if-else statements are used to generate the output according to Various time.
+

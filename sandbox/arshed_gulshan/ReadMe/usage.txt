@@ -1,0 +1,12 @@
+server will response to these commands
+
+time
+list
+pwd
+rem filename
+cat filename
+touch filename data data data...
+
+serverclass: Sandbox
+Clientclass: Client
+

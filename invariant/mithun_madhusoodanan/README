@@ -1,0 +1,10 @@
+Design:
+	Code calculates the num of iterations needed for a four digit number to reach Kaprekar's constant(6174). It gives the number of iterations for each number, frequencies of numbers for each iteration value and plots the iteration and the total count of numbers in a pie graph
+	
+	
+Dependencies:
+	python 2.7
+	pygooglechart
+Usage:
+	$python invariant.py
+	

@@ -1,0 +1,14 @@
+Design
+------
+	Bloom Filter is used to store and search the valid dictionary words in a time efficient way. UNIX dictionary is saved as 'dict' in the current directory itself.
+
+Dependencies
+------------
+Python 2.x
+python-dev
+bitarray-0.3.5   	
+pybloom-1.0.3-py2.7
+
+Usage
+-----
+$ python spell.py

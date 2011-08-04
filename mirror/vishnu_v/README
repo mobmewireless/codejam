@@ -1,0 +1,16 @@
+Description
+This programs receives url of 22 images as inputs from user.
+Then rgb intensity of images are calculated and tjen they are compared
+Thus the similaity is calculated
+
+Dependencies (to be installed)
+openjdk-6-jdk
+
+usage
+compilation (optional)
+javac mirror.java
+running file
+java mirror
+
+
+

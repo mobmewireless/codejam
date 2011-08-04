@@ -1,0 +1,37 @@
+
+a.Design :
+	Using get_words(filename) a list of words is generated from the given text file. 
+	Trigrams of these words	are generated using the function make_triagrams(words) and
+	it returns a generator.Generator is used as the trigrams will be a large set and we
+	need no use it only for once.The generate_shortstory(words,trigrams,size) will generate
+	the shortstory if the list 'words', generator 'trigrams' and the length of the story (optional)
+	is given as parameters.A transition table is generated from the words and stored as a 
+	dictionary named 'transitions'.The key for this dictionary will be the two input 
+	words and its value will be the list of next possible words(output).This helps to find
+	the next word when generating the shortstory.Then any two consecutive words are 
+	selected from the 'words' list using the 'random' module.Using the transitions
+	dictionary the next possible word that would come when these two words come are found
+	and then the second word and the next possible word is considered to do the same.
+	This process is continued until the number of words selected for short story reaches
+	the required length.This actually uses the Markow Chain concept, next state depends 
+	only on current state, not on past.
+	
+	The novel.txt file in the code directory is downloaded from http://www.gutenberg.org/cache/epub/17306/pg17306.txt
+
+	
+	
+b.Dependencies : 
+	No specific dependencies.Only the builtin python modules are used.
+
+
+c.Usage:
+	python generate_shortstory.py <storyfile.txt>
+	
+	or
+	
+	python generate_shortstory.py
+	
+	if no filenames are given as argument, the novel.txt file in the code directory
+	will be selected automatically and short story will be generated from it.
+	
+

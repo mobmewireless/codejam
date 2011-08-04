@@ -1,0 +1,9 @@
+Design
+	Uses set in python to find the number of unique elements. Loops are optimized inorder to use the data generated for the testing the number of unique digits in following calculations.
+
+Dependencies
+	* Python
+	* matplotlib
+
+Usage
+	python invariant.py

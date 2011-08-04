@@ -1,0 +1,9 @@
+level0=1. Kerala\n2. Karnataka\n3. Tamil Nadu\n4. Maharashtra
+level0_1=Capital of Kerala in Trivandrum
+level0_2=Capital of Karnataka is Bangalore
+level0_3=Capital of Tamil Nadu is Chennai
+level0_4=Capital of Maharashtra is Mumbai
+level0_error=Invalid input
+error=Invalid input
+
+level02_3=Bangalore is the capital, seriously!

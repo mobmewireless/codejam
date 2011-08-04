@@ -1,0 +1,10 @@
+iteration  total count of numbers
+
+0			9
+1			356
+2			519
+3			2124
+4			1124
+5			1379
+6			1508
+7			1980

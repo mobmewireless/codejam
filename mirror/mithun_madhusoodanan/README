@@ -1,0 +1,14 @@
+Question:
+Write a program which when given links to two images on the Internet, finds out how similar they are.
+
+Design:
+compare the image histograms and finds out whether thay are equal
+
+Dependencies:
+python 2.7
+pil imaging library
+ImageChops
+
+Usage:
+$python mirror.py
+	will ask for entering the urls while running the program 

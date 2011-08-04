@@ -1,0 +1,61 @@
+				****************************************************
+					Trigram Generator And Story Composer
+				****************************************************
+
+					++++++++++++++++++++++++++++++++++++++
+					+Coded by: j3slyVarghese	     +
+					+twitter:j3slyVarghese		     +
+					+facebook:facebook.com/jesly.varghese+
+					++++++++++++++++++++++++++++++++++++++
+
+	
+
+	[DESIGN]
+
+
+I have used the concept of doubly linked list to store the trigrams.
+
+trigram->first - first word of trigram
+trigram->second - second "   "   "
+trigram->third - third "    "   "
+
+Once the trigrams get stored, they are processed for vowels, periods at end of third word, caps at begining of trigram, so the generated story will make some sense.
+
+Periods are give the most priority, next vowels and then not closed double quotes. Though sometimes everything goes crazy
+
+The search for next trigram is done in forward direction towards end, this is done so the o/p will have sense. Mostly they don't have.. :P
+
+If end is reached while searching it restarts from head
+
+The program often crashes due to segmentation fault. This happens rarely, but try re running
+ +revision additions: the crashes have been removed. No crashes or all the test i done after updation
+ +now the o/p story is within word limits.. :)
+ *this revision wont crash and works well in gcc. No dev c++ needed. Just a linux system and gcc ngram -lm command will do it all:)
+
+The starting of story trigram is searched randomly also are the next trigrams.
+
+
+	[DEPENDENCIES]
+
+
+GCC and its libraries.
+MINGW is needed.
+Install DEV C++ thats the best option.
+Nothing normally the gcc compiler should work.
+Programmed this with DEV C++
+
+	[USAGE]
+
+
+A chapter from some book should be copied to a text file same as the folder in which the program resides.
+
+Start the program
+
+Enter the filename along with its extension and press enter.
+
+The o/p will be written to same folder
+
+Already 3 i/p files has been included with:
+ time.txt
+ another.txt
+ time.txt

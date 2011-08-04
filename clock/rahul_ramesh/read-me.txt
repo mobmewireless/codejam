@@ -1,0 +1,16 @@
+/*
+ * Program:		A clock that spells out time with fuzziness. For example, 2:43 would show as It is almost fifteen to three.
+ * Coder:		Rahul Ramesh
+ * Email:		msg4rahul@gmail.com
+ * Website:		http://theCoder.in/
+ * Phone:		+91-9447786285
+ *
+ * Date:	 	18 June 2011
+ * Demo:		http://thecoder.in/codejam/clock/
+ */
+ 
+ Design:
+ 
+  The elements of $sentence is later joined to form the ouput sentence. 
+  Currently displays Indian Standard time. Changable easily to any time zones.
+ 

@@ -1,0 +1,11 @@
+Design:
+Makes a list of dict words. Makes a list of given word with edits.Then checks if the second list exists in dict words list.
+The dict file present in the directory is /usr/share/dict/cracklib-small in my archlinux.
+
+Dependency:
+Nothing
+
+
+Usage:
+
+python spellchecker.py <word>

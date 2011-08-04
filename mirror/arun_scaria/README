@@ -1,0 +1,21 @@
+README - mirrors
+
+
+Design :
+
+This code retrieves the images at the url and saves it locally. The it finds the differnce between those images and takes the histogram. based on this histogram a root mean squre  analysis is done. this is printed as status.
+
+
+Dependancies:
+No external dependencies as only standard modules are used. 
+PLI, math, time, sys, operator modules are used.
+
+
+usage: 
+./image.py url_of_image_1 url_of_image_2
+
+
+
+
+
+

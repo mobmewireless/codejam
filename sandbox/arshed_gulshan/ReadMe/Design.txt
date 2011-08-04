@@ -1,0 +1,12 @@
+Server
+
+Create a serversocket by scanning ports from 3000-3004
+accepts connections
+provide a thread for each client connection
+Each thread will response to the its client commands
+
+
+client
+ask for connection
+send commands and fetch response
+
